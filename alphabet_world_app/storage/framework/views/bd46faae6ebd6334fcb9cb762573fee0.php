@@ -1,5 +1,5 @@
-@extends('auth.layouts')
-@section('content')
+
+<?php $__env->startSection('content'); ?>
 <main class="login-form">
     <div class="cotainer">
         <div class="row justify-content-center">
@@ -7,21 +7,21 @@
                 <div class="card">
                     <h3 class="card-header text-center">Login</h3>
                     <div class="card-body">
-                        <form method="POST" action="{{ route('login.custom') }}">
-                            @csrf
+                        <form method="POST" action="<?php echo e(route('login.custom')); ?>">
+                            <?php echo csrf_field(); ?>
                             <div class="form-group mb-3">
                                 <input type="text" placeholder="Email" id="email" class="form-control" name="email"
                                     required autofocus>
-                                @if ($errors->has('email'))
-                                <span class="text-danger">{{ $errors->first('email') }}</span>
-                                @endif
+                                <?php if($errors->has('email')): ?>
+                                <span class="text-danger"><?php echo e($errors->first('email')); ?></span>
+                                <?php endif; ?>
                             </div>
                             <div class="form-group mb-3">
                                 <input type="password" placeholder="Password" id="password" class="form-control"
                                     name="password" required>
-                                @if ($errors->has('password'))
-                                <span class="text-danger">{{ $errors->first('password') }}</span>
-                                @endif
+                                <?php if($errors->has('password')): ?>
+                                <span class="text-danger"><?php echo e($errors->first('password')); ?></span>
+                                <?php endif; ?>
                             </div>
                             <div class="form-group mb-3">
                                 <div class="checkbox">
@@ -40,4 +40,5 @@
         </div>
     </div>
 </main>
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('auth.layouts', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH E:\gitHub\AlphabetWorldApp\alphabet_world_app\resources\views/auth/login.blade.php ENDPATH**/ ?>
