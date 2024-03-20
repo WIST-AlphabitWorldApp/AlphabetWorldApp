@@ -33,5 +33,6 @@
     <div class="container mt-5">
         <?php echo $__env->yieldContent('content'); ?>
     </div>
+    
 </body>
 </html><?php /**PATH E:\gitHub\AlphabetWorldApp\alphabet_world_app\resources\views/auth/layouts.blade.php ENDPATH**/ ?>
