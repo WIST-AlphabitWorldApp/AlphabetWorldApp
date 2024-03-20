@@ -1,0 +1,117 @@
+:root {
+  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --font-primary: "Inter", sans-serif;
+  --font-secondary: "Cardo", sans-serif;
+  --main-color: #000000;
+  --color-primary: #fafafa;
+  --color-secondary: rgba(255, 255, 255, 0.6);
+  --color-btn: #d49da6;
+}
+body {
+  font-family: var(--font-default);
+background: #fff;
+}
+
+/*  */
+.page{
+  background: url(../image/bg.png) ;
+  border-radius: 0px 101px 0px 0px;
+  background: linear-gradient(180deg, #0575E6 0%, #00237B 100%);
+  
+  margin-right : 15rem;
+}
+.bg-page{
+  background: #6bacff;
+ 
+}
+
+
+/*  */
+.navbar {
+  --tblr-navbar-border-width: none !important;
+  }
+/*  */
+
+
+
+/*  */
+/*  */
+.date{
+  /* background: #e1eefe; */
+  background: #fff;
+}
+.date h2{
+color: #2684ff;
+}
+
+.date span{
+  color: #2684ff;
+  }
+/*  */
+
+/*  */
+.card{
+  background: #e1eefe;
+}
+.card span{
+background: #d4e6ff;
+
+}
+/*  */
+
+/*  */
+.activities .container,
+.levels .container{
+  /* background: #e1eefe; */
+  background: #fff;
+}
+
+.table thead th{
+  background: #fff !important;
+}
+.btn:hover{
+border:none !important;
+}
+/*  */
+
+
+/*  */
+.navbar-expand-lg.navbar-vertical.navbar-right {
+  box-shadow: none !important;
+  width: 10%;
+}
+.navbar-nav .nav-item a.nav-link.active {
+  background:#2648ff;
+  color: #fff;
+  font-weight: 700;
+}
+.navbar-nav .nav-item a.nav-link {
+  background:#f8fffb;
+  
+}
+/*  */
+
+
+/*  */
+.modal {
+  position: absolute;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*  */
+
+
+/* Start   */
+/* End  */
